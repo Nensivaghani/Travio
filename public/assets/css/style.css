@@ -1286,6 +1286,7 @@ header .sticky .navbar {
 .counter-main {
     display: block;
     position: relative;
+    padding-bottom: 100px;
     text-align: center;
 }
 
@@ -1389,7 +1390,7 @@ header .sticky .navbar {
 /* counter css end */
 /* update css start */
 .update-main {
-    padding: 114px 0px 220px 0px;
+    padding: 114px 0px 120px 0px;
     position: relative;
     display: block;
 }
@@ -3128,7 +3129,13 @@ header .sticky .navbar {
 .process-sidebar .content-box ul li:last-child {
     border-bottom: none;
 }
-
+.process-sidebar .content-box ul li>.icon {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translate(0%, -50%);
+	color: #ff7c5b;
+}
 .process-sidebar .content-box ul li span {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.6);

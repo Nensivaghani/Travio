@@ -11,9 +11,9 @@ const Summary = () => {
                     </div>
                 <h4>Mascow Red City Land</h4>
                 <ul>
-                    <li><FaRegCalendarAlt />From: <span>25 Oct, 2020</span></li>
-                    <li><FaRegCalendarAlt />To: <span>29 Oct, 2020</span></li>
-                    <li><FaRegUser />Guests: <span>2 Adults, 1 Child</span></li>
+                    <li><span className='icon'><FaRegCalendarAlt /></span>From: <span>25 Oct, 2020</span></li>
+                    <li><span className='icon'><FaRegCalendarAlt /></span>To: <span>29 Oct, 2020</span></li>
+                    <li><span className='icon'><FaRegUser /></span>Guests: <span>2 Adults, 1 Child</span></li>
                 </ul>
                 <div className="price"><h4>Total: $170.00</h4></div>
             </div>

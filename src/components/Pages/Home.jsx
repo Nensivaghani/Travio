@@ -21,7 +21,6 @@ const Home = () => {
       <Video/>
       <Map/>
       <Counter/>
-    
       <Update/>
    
     </>
