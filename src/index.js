@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {Header}  from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home';
@@ -19,13 +18,14 @@ import BookingProcressPages from './components/Pages/BookingprocreessPages';
 import TourDealsPages from './components/Pages/TourDealsPages';
 import ErrorPages from './components/Pages/ErrorPages';
 import FaqPages from './components/Pages/FaqPages';
+import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <>
 
  <BrowserRouter>
- <Header/>
+<Header/>
  <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/destinations'element={<Destinations/>}/>
@@ -40,7 +40,7 @@ root.render(
    <Route path='/bloglist'element={<BlogListPages/>}/>
    <Route path='/gallery'element={<GalleryPages/>}/>
    <Route path='/bookingprocress'element={<BookingProcressPages/>}/>
-   <Route path='/error'element={<ErrorPages/>}/>
+   <Route path='/*'element={<ErrorPages/>}/>
    <Route path='/faq'element={<FaqPages/>}/>
  
  

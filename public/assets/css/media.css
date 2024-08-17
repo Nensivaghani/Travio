@@ -1,5 +1,5 @@
-/****************1499****************/
-@media(max-width: 1499px) {
+/****************1599****************/
+@media(max-width: 1599px) {
 
     /* Heder Start */
     .navbar .navbar-brand {
@@ -16,6 +16,7 @@
     .navbar .button {
         padding: 15px 15px;
         font-size: 14px;
+
     }
 
     .navbar .btn-content {
@@ -33,7 +34,7 @@
         font-size: 16px;
     }
 
-    .navbar .navbar-collapse .nav-link {
+    .navbar a.nav-link {
         font-size: 15px;
     }
 
@@ -43,15 +44,19 @@
 
 /****************1199****************/
 @media(max-width: 1199px) {
+    .anim-icon {
+        display: none;
+    }
 
     /* header-start*/
-    .navbar .btn-content {
+    .navbar .button{
         display: none;
     }
 
 
-    .navbar {
-        padding: 0 30px;
+
+    .navbar .navbar-brand {
+        margin-right: 10px;
     }
 
     .navbar .menu-icons a {
@@ -125,17 +130,13 @@
 
     /* counter end */
     /* footer start */
-    .footer-main .top .item .item-inner,
-    .footer-main .top .item .link-inner,
-    .footer-main .top .item .gallery-inner,
-    .footer-main .top .item .content-inner {
-        margin-bottom: 0 !important;
-    }
-
-    .footer-main .top .item .link-inner,
-    .footer-main .top .item .gallery-inner {
+    footer .top .link-inner,
+    footer .top .logo-inner,
+    footer .top .gallery-inner,
+    footer .top .contact-inner {
         margin: 0;
     }
+
 
     /* footer end */
 }
@@ -143,83 +144,68 @@
 /****************991****************/
 @media(max-width: 991px) {
 
-    /* header-start*/
-    .navbar-toggler,
-    .navbar-toggler:focus {
-        border: none;
-        box-shadow: none;
-    }
-
-    #basic-navbar-nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 300px;
-        z-index: 99;
-        background-color: #061a3a;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    }
-
-    .navbar .navbar-collapse .nav-link {
-        padding: 10px 30px;
-        margin: 0;
-        text-align: left;
-    }
-
-    .navbar {
-        padding: 30px 50x;
-    }
+    /* Header Start */
 
     .navbar .navbar-collapse .img-content {
         display: block;
         margin: 30px;
     }
 
-    .navbar .navbar-collapse .img-content {
-        display: block;
+    .navbar #basic-navbar-nav {
+        position: absolute;
+        top: 0%;
+        right: 0;
+        width: 300px;
+        background: #061a3a;
+        height: 1200px;
+        z-index: 99;
+    }
+
+    .navbar a.nav-link {
+        padding: 10px 30px !important;
+        margin: 0;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
     }
 
     .navbar .left {
         justify-content: space-between;
     }
 
+    header .navbar .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        z-index: 999;
+        transition: all 0.8s ease-in-out;
+    }
+
     .navbar-toggler.collapsed {
         z-index: 111;
         position: absolute;
-        right: 150px;
-        transition: all 0.5s ease-in-out;
-
+        right: 130px !important;
+        transition: all 0.01s ease-in-out;
     }
+
+
 
     .navbar-nav {
         padding-top: 80px;
-    }
-
-    .navbar-toggler {
-        z-index: 111;
-        position: absolute;
-        right: 20px;
-        transition: all 0.5s ease-in-out;
     }
 
     .navbar .dropdown .dropdown-menu.show {
         background: #061a3a;
         border: none;
         width: 100%;
-        box-shadow: 0;
+        box-shadow: none;
         position: relative;
-        padding: 0;
         border-radius: 0;
+        padding: 0;
     }
 
     .navbar .dropdown .dropdown-menu a {
         color: #fff;
         padding-left: 55px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-    }
-
-    .navbar .navbar-collapse .nav-link {
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     }
 
@@ -239,9 +225,10 @@
 
     .navbar .contact-info {
         position: relative;
-        padding: 20px 30px 20px 30px;
+        padding: 120px 30px 20px 30px;
         display: block;
     }
+
     .navbar .contact-info h4 {
         position: relative;
         font-size: 20px;
@@ -249,33 +236,41 @@
         font-weight: 700;
         margin-bottom: 20px;
     }
+
     .navbar .contact-info ul li {
+
         position: relative;
         display: block;
         font-size: 15px;
         color: rgba(255, 255, 255, 0.80);
         margin-bottom: 3px;
     }
+
     .navbar .contact-info ul li a {
         color: rgba(255, 255, 255, 0.80);
     }
+
     .navbar .social-links {
         display: block;
         position: relative;
         padding: 0px 25px;
     }
+
     .navbar .social-links li {
         position: relative;
         display: inline-block;
         margin: 0px 10px 10px;
     }
+
     .navbar .social-links li a {
         position: relative;
         line-height: 32px;
         font-size: 16px;
         color: #ffffff;
         transition: all 500ms ease;
-    }    /* header-end*/
+    }
+
+    /* Header End */
     /* feature css  start*/
     .feature-main .feature-inner .item {
         width: 50%;
@@ -375,11 +370,15 @@
 
     /* new update end */
     /* footer start */
-    .footer-main .top .item .item-inner,
-    .footer-main .top .item .link-inner,
-    .footer-main .top .item .gallery-inner,
-    .footer-main .top .item .content-inner {
+    footer .top .link-inner,
+    footer .top .logo-inner,
+    footer .top .gallery-inner,
+    footer .top .contact-inner {
         margin-bottom: 30px !important;
+    }
+
+    footer .top {
+        padding-bottom: 80px;
     }
 
     /* footer end */
@@ -435,6 +434,15 @@
 
 /****************767****************/
 @media (max-width:767px) {
+/* title start */
+.title {
+    margin-bottom: 30px;
+}
+
+.titl h2 {
+    font-size: 36px;
+    line-height: 45px;
+}
 
     /* banner css  start*/
     .banner-main {
@@ -553,12 +561,7 @@
     }
 
     /* news-update-end */
-    /* footer start */
-    .footer-main .top {
-        padding-bottom: 70px;
-    }
 
-    /* footer end */
     /****************** inner-pages-media ******************/
     /*************  destinationdetails start *************/
 
@@ -594,9 +597,11 @@
     .contact-main {
         padding: 65px 0px 70px 0px;
     }
+
     .contactinfo-main {
         padding: 70px 0px 40px 0px;
     }
+
     /*************  contact end *************/
 
 }
@@ -605,6 +610,10 @@
 @media (max-width:567px) {
 
     /* footer start */
+       .footer-main .top {
+        padding-bottom: 70px;
+    }
+
     .footer-main .bottom .bottom-inner {
         display: block;
     }
@@ -620,9 +629,12 @@
 
 /****************480****************/
 @media (max-width:480px) {
-
+    .title {
+        font-size: 30px;
+        line-height: 38px;
+    }
     /* heder Start */
-    #basic-navbar-nav {
+  .navbar #basic-navbar-nav {
         width: 100%;
     }
 
