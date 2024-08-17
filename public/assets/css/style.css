@@ -3457,20 +3457,20 @@ footer .bottom ul.item li:last-child {
 
 
 
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs-top>.ant-tabs-nav::before {
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs-top>.ant-tabs-nav::before {
     border: none;
 }
 
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-ink-bar {
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-ink-bar {
     display: none;
 }
 
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs>.ant-tabs-nav .ant-tabs-nav-wrap {
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs>.ant-tabs-nav .ant-tabs-nav-wrap {
     justify-content: end;
     margin-bottom: calc(40px - 16px);
 }
 
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab-btn {
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab-btn {
     position: relative;
     display: inline-block;
     width: 50px;
@@ -3487,12 +3487,12 @@ footer .bottom ul.item li:last-child {
     text-align: center;
 }
 
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
     margin: 0;
 }
 
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab-btn:hover,
-.list-grid-main :where(.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab-btn:hover,
+.list-grid-main (.css-dev-only-do-not-override-j9bb5n).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #fff;
     background-color: #ff7c5b;
     box-shadow: 0px 15px 25px 0px rgba(255, 124, 91, 0.3);
@@ -4476,7 +4476,11 @@ display: block;
 .gallery-main .ant-image.css-dev-only-do-not-override-j9bb5n {
     width: 100%;
 }
-
+.gallery-main:where(.css-j9bb5n).ant-image {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
 /* Blog Page End */
 /* Error Page start */
 .error-main {
